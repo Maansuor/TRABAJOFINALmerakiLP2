@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATOS</title>
+    <link th:href="@{/css/estilos.css}" rel="stylesheet" />
+    <link th:href="@{/css/styless.css}" rel="stylesheet" />
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
+    <style>
+        body{
+            background: #F7F8F8;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ACBB78, #F7F8F8);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ACBB78, #F7F8F8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contenedor">
+        <header>
+            <br>
+            <div id="slideshow">
+            <img id="image" src="img/1.jpg" sizes="10" height="400" width="900">
+            </div>
+            <div>
+            <button id="prev">&LeftArrow;</button>
+            <button id="next">&RightArrow;</button>
+            </div>
+            <script th:src="@{/js/codigo.js}"></script>
+        </header>
+    </div>
+    <form>
+        <div class="jumbotron text-center">
+            <marquee>SEAN TODOS USTEDES BIENVENIDOS A.....</marquee>
+            <h1>CAFÉ MERAKI</h1>
+            <h2>NOSOSTROS</h2>
+            <div class="topnav">
+                
+            
+                <a th:href="@{/portal}">Inicio</a>
+                <a href="https://www.facebook.com/">Facebook</a>
+                <a href="https://www.youtube.com/">Youtube</a>
+                <a href="https://mail.google.com/">Gmail</a>
+                
+                
+            
+        </div>
+
+        </div>
+        
+        <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h3>¿Quienes somos?</h3>
+                        <img src="img/nosotross.JPG" sizes="5" height="140" width="250"><br>
+                        <br>
+                        <p>Cafeteria</p>
+                        <p>meraki</p>
+                        <p>tu mejor opción</p>
+                        
+                        <form>
+                            <a th:href="@{/datos}">
+                                <input class="btn-primary" type="button" value="Ir a enlace">
+                            </a>
+                        </form>
+
+                    </div>
+                    <div class="col-sm-4">
+                        <h3>Nuestra ubicación</h3>
+                        <img src="img/ubicacion.jpg" sizes="5" height="140" width="250"><br>
+                        <br>
+                        <p>Para poder</p>
+                        <p>ver el local </p>
+                        <p>ver el caso de envio del delivery </p>
+                        <form>
+                            <a th:href="@{/completar}">
+                                <input class="btn-primary" type="button" value="Ir a enlace">
+                            </a>
+                        </form>
+
+                    </div>
+                    <div class="col-sm-4">
+                        <h3>Sugerencias de pedidos</h3>
+                        <img src="img/sugeren.jpg" sizes="5" height="140" width="250"><br>
+                        <br>
+                        <p>Ayuda para</p>
+                        <p>ver platos recomendados</p>
+                        <p>ver postres de la carta</p>
+                        <form>
+                            <a th:href="@{/seleccionar}">
+                                <input class="btn-primary" type="button" value="Ir a enlace">
+                            </a>
+                        </form>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>    </form>
+    <hr>
+    <hr>
+    <div class="container">
+        <h2>CAFÉ MERAKI EIRL</h2>
+        <br>
+
+        <label for="">Contigo en todos los inviernos</label>
+        <img id="image" src="img/1.jpg" sizes="10" height="400" width="900">
+        <br><br>
+        <label for="">En tiempos de estrés frecuente causado por el trabajo o el estudio, las personas buscan un lugar para pasar el rato con su familia, distraerse y degustar de los ricos sabores de café y demás bebidas. Café Meraki EIRL como una empresa en pleno desarrollo no cuenta con un sistema que le ayude en la toma de pedidos, en el control de ventas, y en el mantenimiento de datos de sus departamentos (almacén y recursos humanos). Además, cabe mencionar que todos los registros se hacen de forma manual, lo que conlleva un uso excesivo de papel bond y pérdida de tiempo.
+</label>
+        <br>
+        <br>
+        <label for="">se busca romper las barreras o limitaciones de Café Meraki EIRL frente a la competencia en el mercado de Cafeterías, ello enfocado en la atención brindada, teniendo mayor control del funcionamiento de procesos y subprocesos gracias al aplicativo implementado, cumpliendo de esta forma sus requerimientos</label>
+        <br>
+        <form>
+            
+            <hr>
+            <hr>
+            <label for="">Califique esta información</label>
+            <div class="checkbox">
+                <label for=""><input type="checkbox">1</label>
+                <label for=""><input type="checkbox">2</label>
+                <label for=""><input type="checkbox">3</label>
+                <label for=""><input type="checkbox">4</label>
+                <label for=""><input type="checkbox">5</label>
+            </div>
+            <br>
+            <input type="button" class="btn btn-warning" value="Enviar">
+            <br>
+            <br>
+           
+        </form>
+
+
+
+
+
+    </div>
+    <br><br>
+    <footer>
+        <p> &copy Derechos Reservados lima-Perú-2022</p>
+        <img src="img/twitter.png" alt="">
+        <img src="img/youtube.png" alt="">
+    </footer>
+</body>
+
+</html>
